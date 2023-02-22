@@ -1,9 +1,9 @@
-from tabulate import tabulate
 
-mydata = [
-    ["Thyra" , "Nakuru"]
-    ["Auria" , "Naivasha"]
-    ["Auris" , "Taiyta Taveta"]
-]
-head =["Name" , "City"]
-print(tabulate(mydata ,headers=head ,tablefmt="grid"))
+from tabulate import tabulate
+data = [["mavs",99],
+        ["suns",91],
+        ["spurs",94],
+        ["nets",88]]
+
+col_names = ["teams","points"]
+print(tabulate(data,headers=col_names,tablefmt="fancy_grid"))
