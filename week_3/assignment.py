@@ -1,21 +1,13 @@
-h= eval(input("enter diamonds height:"))
+import math
+a =int(input("enter a:"))
+b =int(input("enter b:"))
+c =int(input("enter c:"))
 
-for x in range (h):
-    print(" " * (h-x),"*" * (2*x + 1))
-for x in range (h - 2,-1,-1):
-    print(" "* (h-x),"x"* (2*x + 1))
+sn1 =(-b + (math.sqrt(math.pow(b,2)-4*a*c)))/2*a
+sn2 =(-b - (math.sqrt(math.pow(b,2)-4*a*c)))/ 2*a
 
-
-
-from math import factorial
-#input n
-n =5
-for i in range (n):
-    for j in range (n-i + 1):
-        print(end= "")
-for i in range (n):
-    for j in range (n-i + 1):
-        print(factorial(i)// (factorial(j)* factorial(i-j)),end="")
+print(sn1)
+print(sn2)
 
 
 
