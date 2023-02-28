@@ -1,0 +1,9 @@
+Hello world from Mary and John
+#types of files
+ -binary files
+ -text files
+ -c,s,v common s
+ def set_model(self,model):
+        self.model=model
+def set_model(self,model):
+        self.model=model
