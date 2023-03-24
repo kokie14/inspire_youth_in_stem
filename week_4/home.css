@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+}
+#image_1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(61, 231, 27);
+}
+#image_2{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    background-color: beige;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    align-self: last baseline;
+    font-size: xx-large;
+    font-style: italic;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <h1>LOG IN SYSTEM</h1>
+        <label for ="">Name</label><br></br>
+        <input type="text"><br>
+        <label for="">Age</label><br>
+        <input id ="age"type="int"><br>
+        <button id="confirm_btn">CONFIRM</button>
+        <h2 id="get_in">You can get in</h2>
+
+        <h1 id="number">0</h1>
+        <button id="increase_btn">Increase</button>
+        <button id="decrease_btn">Decrease</button>
+        <button id="reset_btn">Reset</button>
+
+        <script>
+            var number=0
+            document.getElementById("increase_btn").onclick = function increase(){
+                number=1;
+                console.log(number)
+                document.getElementById("number").innerHTML =number
+            }
+
+            document.getElementById("decrease_btn").onclick = function decrease(){
+                number=1;
+                console.log(number)
+                document.getElementById("number").innerHTML =number
+            }
+
+            document.getElementById("reset_btn").onclick = function Reset(){
+                number=1;
+                console.log(number)
+                document.getElementById("number").innerHTML =number
+            }
+            //let age= 14
+            let  msg=""
+            document.getElementById("confirm_btn").onclick=function check_age(){
+            console.log("Button clicked !")
+            var age = document.getElementById("age").value
+            console.log(age)    
+            
+            if (age <=18){
+              msg="You are not allowed"
+              console.log("You are not allowed")
+              document.getElementById("get_in").innerHTML=msg
+            }else{
+               msg="Welcome to the club"
+               console.log("Welcome to the club")
+             document.getElementById("get_in").innerHTML=msg
+            }
+            }
+
+        </script>
+
+        <h2 id ="fruits"></h2>
+        <script>
+            //variables in script
+            //number
+            var f_number=12;
+            var s_number=28;
+            var sum=f_number + s_number;
+            var diff =f_number -s_number;
+            var product =f_number *s_number;
+            var quotient = f_number/s_number;
+            var modulus=f_number% s_number;
+            var n1,n2,n3,n4; //declare variables
+
+            var n1=5
+            var n2=6
+            var sum = n1+ n2
+            //string
+            var my_first_name ="Sharon"
+            var my_second_name ="Njoki"
+            var age =24;
+            var my_city ="Nairobi"
+
+            var full_name = my_first_name+ " " +my_second_name
+
+            //Arrays
+            let fruits= ["Banana","Apple","Lime","Guava","Oranges"];
+            
+            let  my_fruit= fruits[fruits.length-1];
+            document.getElementById("fruits").innerHTML=my_fruit
+
+            //conditions **if else
+            if( age> 18){
+                msg="you can drive";
+           } else{
+            msg=" still too young to  drive"
+           }
+           document.getElementById("fruits").innerHTML=msg
+
+            document.getElementById("f_number").innerHTML=f_number
+            document.getElementById("s_number").innerHTML =s_number
+            document.getElementById("sum").innerHTML=sum
+            document.getElementById("f_name").innerHTML=full_name
+            //arithmetic operaters
+            //+,-,/,*,% ,(modulus)
+            var n1= 5;
+            var n1= 6;
+            var sum=n1 + n2
+            var diff = n1- n2
+            var product =n1 * n2
+
+        </script>
+        <button>Click me</button>
+    </body>
+</html>
